@@ -1,0 +1,14 @@
+.status {
+  margin: 12px 0 0;
+  font-size: 14px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.success {
+  color: var(--good);
+}
+
+.error {
+  color: var(--bad);
+}

@@ -1,0 +1,46 @@
+.panel {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 14px;
+  color: var(--muted);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field input {
+  width: 100%;
+  padding: 8px 10px;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.slippageRow {
+  display: flex;
+  gap: 6px;
+}
+
+.slippageRow input {
+  flex: 1;
+}
+
+.chip {
+  padding: 6px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.chip:hover,
+.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}

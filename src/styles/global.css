@@ -1,0 +1,104 @@
+:root {
+  --bg: #0d0e14;
+  --card: #191b24;
+  --surface: #22252f;
+  --border: #2c303c;
+  --text: #f1f2f6;
+  --muted: #8b90a0;
+  --accent: #fc72ff;
+  --accent-2: #ff3bd4;
+  --good: #3ad37a;
+  --warn: #f5a524;
+  --bad: #ff5c5c;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #2a1534 0%, var(--bg) 60%) fixed;
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--accent);
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input {
+  font: inherit;
+}
+
+/* ---- общие кнопки ---- */
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.btn-primary:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.btn-primary:disabled {
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.btn-danger:not(:disabled) {
+  background: var(--bad);
+}
+
+.btn-secondary {
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(252, 114, 255, 0.15);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(252, 114, 255, 0.25);
+}
+
+.icon-btn {
+  padding: 4px 8px;
+  font-size: 18px;
+  border-radius: 8px;
+  background: none;
+}
+
+.icon-btn:hover {
+  background: var(--surface);
+}

@@ -1,0 +1,64 @@
+.box {
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.box:focus-within {
+  border-color: var(--border);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.max {
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(252, 114, 255, 0.15);
+  border-radius: 6px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 0;
+  font-size: 32px;
+  color: var(--text);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.tokenBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 6px;
+  font-size: 17px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+}
+
+.tokenBtn:hover {
+  border-color: var(--accent);
+}
+
+.caret {
+  color: var(--muted);
+}
