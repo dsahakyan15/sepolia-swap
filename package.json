@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.108.2",
+    "cryptocurrency-icons": "^0.18.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "viem": "^2.58.4",

@@ -8,6 +8,8 @@ export interface Token {
   symbol: string;
   name: string;
   decimals: number;
+  /** Ссылка на иконку (URL или импортированный ассет). Нет — рисуется заглушка. */
+  logoURI?: string;
   /** Токен добавлен пользователем вручную */
   isCustom?: boolean;
 }
